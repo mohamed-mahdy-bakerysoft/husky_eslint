@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "prepare": "husky",
+    "husky:run": "npm run lint-staged",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "next": "15.0.2",
