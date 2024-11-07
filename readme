@@ -1,0 +1,39 @@
+<!-- lint -->
+
+Step 1: Install Prettier
+Run the following command to install Prettier as a development dependency:
+
+npm install --save-dev prettier
+
+Step 2: Create a Prettier Configuration File
+Create a .prettierrc file in the root of your project:
+
+{
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 80,
+  "trailingComma": "es5"
+}
+
+Step 1: Install ESLint
+Run the following command to install eslint:
+
+npm install --save-dev eslint
+
+
+Step 3: Integrate Prettier with ESLint
+To ensure Prettier and ESLint work together seamlessly, install the following plugins:
+
+npm install --save-dev eslint-plugin-prettier eslint-config-prettier
+
+
+Step 4: Configure ESLint to Automatically Fix Errors
+Add the following script to your package.json:
+
+"scripts": {
+  "lint": "eslint . --fix"
+}
+
+
+<!-- husky -->
+
