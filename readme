@@ -37,3 +37,6 @@ Add the following script to your package.json:
 
 <!-- husky -->
 
+npm install --save-dev husky
+
+npx husky init
